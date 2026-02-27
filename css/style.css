@@ -354,7 +354,7 @@ p {
     width: 350px;
     height: 450px;
     box-shadow: none;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .about-text h2 {
@@ -710,7 +710,7 @@ footer .credits {
 .reel-item video {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     /* Preenche tudo sem distorcer */
     cursor: pointer;
 }
