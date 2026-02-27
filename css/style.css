@@ -349,11 +349,11 @@ p {
 }
 
 .about-image img {
-    max-width: 420px;
+    max-width: 336px;  /* 20% menor */
     box-shadow: none;
     object-fit: cover;
     border-radius: 0;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 15px 3px rgba(176, 224, 230, 0.8);  /* glow gelo */
 }
 
 .about-text h2 {
@@ -704,7 +704,7 @@ footer .credits {
     height: 100%;
     object-fit: cover;
     border-radius: 0;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 15px 3px rgba(176, 224, 230, 0.8);  /* glow gelo */
     /* Preenche tudo sem distorcer */
     cursor: pointer;
 }
