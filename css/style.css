@@ -353,7 +353,7 @@ p {
     border-radius: 0;
     width: 350px;
     height: 450px;
-    box-shadow: 0 0 20px rgba(201, 162, 39, 0.3);
+    box-shadow: none;
     object-fit: cover;
 }
 
