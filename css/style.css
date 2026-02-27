@@ -350,10 +350,10 @@ p {
 
 .about-image img {
     max-width: 420px;
-    border-radius: 35%;
+    border-radius: 0;
     width: 350px;
     height: 450px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 20px rgba(201, 162, 39, 0.3);
     object-fit: cover;
 }
 
@@ -428,7 +428,7 @@ p {
     width: 70px;
     height: 70px;
     background: rgba(255, 255, 255, 0.2);
-    border-radius: 35%;
+    border-radius: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -479,7 +479,7 @@ p {
 
 .speech-bubble {
     background: var(--white);
-    border-radius: 35%;
+    border-radius: 0;
     width: 350px;
     height: 450px;
     padding: 2rem;
@@ -619,7 +619,7 @@ footer .credits {
         background: rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
-        border-radius: 35%;
+        border-radius: 0;
     width: 350px;
     height: 450px;
         padding: 2rem 1.5rem;
