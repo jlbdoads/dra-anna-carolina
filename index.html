@@ -147,7 +147,7 @@
                     <li><a href="#tratamentos">Tratamentos</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#beneficios">Benefícios</a></li>
-                    <li><a href="#videos">Vídeos</a></li>
+                    
                     <li><a href="#contato" class="btn btn-nav">Agendar Consulta</a></li>
                 </ul>
             </nav>
@@ -171,44 +171,37 @@
         </div>
     </section>
     <!-- Dra Explica Section -->
-    <section id="dra-explica" class="section bg-light">
+        <section id="dra-explica" class="section bg-light">
         <div class="container">
             <div class="section-header">
-                <h2>Dra. Explica</h2>
-                <p>Tire suas dúvidas assistindo aos vídeos explicativos.</p>
+                <h2>Dra. Anna Explica</h2>
+                <p>Tire suas dúvidas assistindo aos vídeos.</p>
             </div>
 
-            <div class="reels-container">
-
-                <div class="reel-item">
-                    <video controls preload="none" poster="img/capa1.jpg">
-                        <source src="img/video1.mp4" type="video/mp4">
-                        Seu navegador não suporta vídeos.
-                    </video>
-                    <div class="reel-caption">Varizes a Laser</div>
+            <div class="videos-grid">
+                <div class="video-card" onclick="playVideo(this, 'hm_M2J8NHDI')">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/hm_M2J8NHDI/maxresdefault.jpg" alt="Video 1">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="video-title">Varizes a Laser</div>
                 </div>
 
-                <div class="reel-item">
-                    <video controls preload="none" poster="img/capa2.jpg">
-                        <source src="img/video2.mp4" type="video/mp4">
-                    </video>
-                    <div class="reel-caption">O que é Lipedema?</div>
+                <div class="video-card" onclick="playVideo(this, '3F1ry-9Pix0')">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/3F1ry-9Pix0/maxresdefault.jpg" alt="Video 2">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="video-title">O que é Lipedema?</div>
                 </div>
 
-                <div class="reel-item">
-                    <video controls preload="none" poster="img/capa3.jpg">
-                        <source src="img/video3.mp4" type="video/mp4">
-                    </video>
-                    <div class="reel-caption">Antes e Depois</div>
+                <div class="video-card" onclick="playVideo(this, 'mjXNXunV9ag')">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/mjXNXunV9ag/maxresdefault.jpg" alt="Video 3">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="video-title">Tratamentos Modernos</div>
                 </div>
-
-                <div class="reel-item">
-                    <video controls preload="none" poster="img/capa4.jpg">
-                        <source src="img/video4.mp4" type="video/mp4">
-                    </video>
-                    <div class="reel-caption">O que fazer?</div>
-                </div>
-
             </div>
         </div>
     </section>
@@ -353,39 +346,7 @@
     </section>
 
     <!-- Video Section (New) -->
-    <section id="videos" class="section bg-dark text-white">
-        <div class="container">
-            <div class="section-header">
-                <h2>Vídeos Explicativos</h2>
-                <p>Saiba mais sobre os tratamentos e tire suas dúvidas.</p>
-            </div>
-            <div class="grid videos-grid">
-                <!-- Video Item 1 -->
-                <div class="video-wrapper" data-video-id="VIDEO_ID_1">
-                    <div class="video-thumbnail">
-                        <div class="play-button">▶</div>
-                        <p>Tratamento de Varizes</p>
-                    </div>
-                    <!-- Iframe will be injected here via JS -->
-                </div>
-                <!-- Video Item 2 -->
-                <div class="video-wrapper" data-video-id="VIDEO_ID_2">
-                    <div class="video-thumbnail">
-                        <div class="play-button">▶</div>
-                        <p>Lipedema: O que é?</p>
-                    </div>
-                </div>
-                <!-- Video Item 3 -->
-                <div class="video-wrapper" data-video-id="VIDEO_ID_3">
-                    <div class="video-thumbnail">
-                        <div class="play-button">▶</div>
-                        <p>Dúvidas Frequentes</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    
     <!-- Contact Section -->
     <section id="contato" class="section contact-section">
         <div class="container">
@@ -430,6 +391,11 @@
     </footer>
 
     <script src="js/main.js"></script>
+<script>
+function playVideo(card, videoId) {
+    card.innerHTML = "<iframe src="https://www.youtube.com/embed/" + videoId + "?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>";
+}
+</script>
 </body>
 
 </html>

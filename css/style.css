@@ -303,8 +303,8 @@ p {
     align-items: center;
     justify-content: center;
     background: rgba(143, 188, 143, 0.25);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
     opacity: 0;
     transition: opacity 0.4s ease;
 }
@@ -612,8 +612,8 @@ footer .credits {
     .hero-content {
         max-width: 100%;
         background: rgba(255, 255, 255, 0.10);
-        // backdrop-filter: blur(10px);
-        -webkit-// backdrop-filter: blur(10px);
+        // backdrop-filter: blur(25px);
+        -webkit-// backdrop-filter: blur(25px);
         padding: 2rem 1.5rem;
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
         border: 1px solid rgba(255, 255, 255, 0.3);
@@ -765,4 +765,66 @@ footer .credits {
         /* Melhora o espaçamento entre as linhas */
     }
 
+}
+/* Videos Grid */
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.video-card {
+    cursor: pointer;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+}
+
+.video-thumbnail {
+    position: relative;
+    aspect-ratio: 9/16;
+    background: #000;
+}
+
+.video-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background: rgba(143, 188, 143, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+}
+
+.video-title {
+    padding: 15px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--text-color);
+    background: white;
+}
+
+/* Video iframe responsive */
+.video-card iframe {
+    width: 100%;
+    aspect-ratio: 9/16;
+    border: none;
 }
