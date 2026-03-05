@@ -303,8 +303,8 @@ p {
     align-items: center;
     justify-content: center;
     background: rgba(143, 188, 143, 0.25);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     opacity: 0;
     transition: opacity 0.4s ease;
 }
@@ -626,13 +626,37 @@ footer .credits {
         text-shadow: none;
     }
 
+    .hero .btn-primary {
+        display: block;
+        width: 100%;
+        max-width: 280px;
+        margin: 1.5rem auto 0;
+        text-align: center;
+    }
+
     .hero h3 {
         font-size: 1.2rem;
         text-shadow: none;
     }
 
+    .hero .btn-primary {
+        display: block;
+        width: 100%;
+        max-width: 280px;
+        margin: 1.5rem auto 0;
+        text-align: center;
+    }
+
     .hero p {
         text-shadow: none;
+    }
+
+    .hero .btn-primary {
+        display: block;
+        width: 100%;
+        max-width: 280px;
+        margin: 1.5rem auto 0;
+        text-align: center;
     }
 
     .about-container {
