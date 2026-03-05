@@ -1,9 +1,9 @@
 :root {
     --primary-color: #2d2d2d;
     /* Dark gray for text */
-    --secondary-color: #8FBC8F;
+    --secondary-color: #2563EB;  /* Blue for buttons */
     /* Mint/Sage Green for accents and buttons */
-    --accent-color: #9DC88D;
+    --accent-color: #1D4ED8;  /* Darker blue */
     /* Lighter mint green variant */
     --text-color: #333;
     --light-bg: #F5F1E8;
@@ -213,7 +213,7 @@ p {
     background: var(--accent-color);
     color: var(--white);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(143, 188, 143, 0.3);
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
 }
 
 /* Sections Common */
