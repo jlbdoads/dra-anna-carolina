@@ -179,7 +179,7 @@
             </div>
 
             <div class="videos-grid">
-                <div class="video-card" onclick="window.open('https://youtube.com/shorts/hm_M2J8NHDI?feature=share', '_blank')">
+                <div class="video-card" onclick="playVideo(this, 'hm_M2J8NHDI')">
                     <div class="video-thumbnail">
                         <img src="https://img.youtube.com/vi/hm_M2J8NHDI/maxresdefault.jpg" alt="Video 1">
                         <div class="play-icon">▶</div>
@@ -187,7 +187,7 @@
                     <div class="video-title">Varizes a Laser</div>
                 </div>
 
-                <div class="video-card" onclick="window.open('https://youtube.com/shorts/3F1ry-9Pix0?feature=share', '_blank')">
+                <div class="video-card" onclick="playVideo(this, '3F1ry-9Pix0')">
                     <div class="video-thumbnail">
                         <img src="https://img.youtube.com/vi/3F1ry-9Pix0/maxresdefault.jpg" alt="Video 2">
                         <div class="play-icon">▶</div>
@@ -195,7 +195,7 @@
                     <div class="video-title">O que é Lipedema?</div>
                 </div>
 
-                <div class="video-card" onclick="window.open('https://youtube.com/shorts/mjXNXunV9ag?feature=share', '_blank')">
+                <div class="video-card" onclick="playVideo(this, 'mjXNXunV9ag')">
                     <div class="video-thumbnail">
                         <img src="https://img.youtube.com/vi/mjXNXunV9ag/maxresdefault.jpg" alt="Video 3">
                         <div class="play-icon">▶</div>
@@ -394,7 +394,10 @@
 <script>
 // function playVideo(card, videoId) {
     function playVideo(card, videoId) {
-    // For YouTube Shorts, open directly
+    function playVideo(card, videoId) {
+    // Embed YouTube Shorts inline
+    card.innerHTML = '<iframe src="https://www.youtube.com/embed/' + videoId.replace("shorts/", "") + '?autoplay=1" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen style="width:100%;height:100%;border:none;position:absolute;top:0;left:0;"></iframe>';
+}
     window.open('https://youtube.com/shorts/' + videoId + '?feature=share', '_blank');
 }
     // card.innerHTML = '<iframe src="https://www.youtube.com/embed/' + videoId + '?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen style="width:100%;height:100%;border:none;"></iframe>';
