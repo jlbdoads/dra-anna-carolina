@@ -828,3 +828,21 @@ display: none; /* .play-icon {
     aspect-ratio: 9/16;
     border: none;
 }
+
+/* Carrossel Mobile Forçado */
+@media (max-width: 768px) {
+    .videos-grid {
+        display: flex !important;
+        flex-direction: row !important;
+        overflow-x: auto !important;
+        scroll-snap-type: x mandatory !important;
+        gap: 12px !important;
+        padding: 15px !important;
+    }
+    
+    .videos-grid .video-card {
+        flex: 0 0 75% !important;
+        scroll-snap-align: center !important;
+        min-height: 400px !important;
+    }
+}
