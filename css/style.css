@@ -612,8 +612,8 @@ footer .credits {
     .hero-content {
         max-width: 100%;
         background: rgba(255, 255, 255, 0.10);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
+        // backdrop-filter: blur(10px);
+        -webkit-// backdrop-filter: blur(10px);
         padding: 2rem 1.5rem;
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
         border: 1px solid rgba(255, 255, 255, 0.3);
