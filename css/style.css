@@ -1,9 +1,9 @@
 :root {
     --primary-color: #2d2d2d;
     /* Dark gray for text */
-    --secondary-color: #87CEEB;  /* Blue for buttons */
+    --secondary-color: #77DD77;  /* Light green for buttons */
     /* Mint/Sage Green for accents and buttons */
-    --accent-color: #5DADE2;  /* Darker blue */
+    --accent-color: #5FBF5F;  /* Darker green */
     /* Lighter mint green variant */
     --text-color: #333;
     --light-bg: #F5F1E8;
